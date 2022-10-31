@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/JainePS/03-bases-node/issues"
   },
-  "homepage": "https://github.com/JainePS/03-bases-node#readme"
+  "homepage": "https://github.com/JainePS/03-bases-node#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.6.0"
+  }
 }

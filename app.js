@@ -1,6 +1,14 @@
 const { createFile } = require('./helpers/multiplica');
+const argv = require('yargs').argv;
 
 console.clear();
+console.log(process.argv);
+console.log(argv);
+
+console.log('base: yargs', argv.base);
+
+
+
 /**
  * To create all tables once
  */
@@ -12,8 +20,11 @@ console.clear();
 //     .catch(err => {throw err})
     
 // });
+/**
+ * To use a terminal command
+ */
 
-const [, , arg3 = 'base=0'] = process.argv;
-const [ , base = 0] = arg3.split('=') 
-createFile(base).then(fileName => console.log(`${fileName} created`))
-.catch(err => {throw err})
+// const [, , arg3 = 'base=0'] = process.argv;
+// const [ , base = 0] = arg3.split('=') 
+// createFile(base).then(fileName => console.log(`${fileName} created`))
+// .catch(err => {throw err})
