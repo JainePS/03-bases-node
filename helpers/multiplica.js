@@ -1,6 +1,8 @@
 const fs = require('fs');
-const createFile = async (base) => {
-    try {
+
+const createFile = async (base=0, list = false) => {
+    if(list == true){
+        try {
         
         const header =`Multiplication table of ${base}\n\n-----------------------\n`
     
@@ -22,7 +24,8 @@ const createFile = async (base) => {
         return `table-${base}`;
     } catch (error) {
         throw error
-    }
+    }}else
+    return ``;
     
 };
 
