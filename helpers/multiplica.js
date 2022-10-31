@@ -2,7 +2,7 @@ const fs = require('fs');
 const createFile = async (base) => {
     try {
         
-        const header =`Tabuada do ${base}\n\n-----------------------\n`
+        const header =`Multiplication table of ${base}\n\n-----------------------\n`
     
         header;
     
