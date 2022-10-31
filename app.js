@@ -1,4 +1,5 @@
-const { argv } = require('process');
+const argv = require('./config/yargs');
+
 const { createFile } = require('./helpers/multiplica');
 console.clear();
 
@@ -22,6 +23,6 @@ console.clear();
 // const [ , base = 0] = arg3.split('=') 
 
 
-
+console.log(argv.b);
 createFile(argv.b, argv.l).then(fileName => console.log(`${fileName} created`))
     .catch(err => { throw err })
