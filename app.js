@@ -19,10 +19,6 @@ console.clear();
  * To use a terminal command
  */
 
-// const [, , arg3 = 'base=0'] = process.argv;
-// const [ , base = 0] = arg3.split('=') 
-
-
 console.log(argv.b);
 createFile(argv.b, argv.l).then(fileName => console.log(`${fileName} created`))
     .catch(err => { throw err })
