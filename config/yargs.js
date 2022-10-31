@@ -12,7 +12,13 @@ const argv = require('yargs')(process.argv.slice(2))
             type: 'boolean',
             default: false,
             description: 'Show the table'
-        })
+        }).option(
+            'd', {
+                alias: 'due',
+                type: 'number',
+                default: 10,
+                description: 'Is the limit of the multiplication numbers.'
+            })
     .check((argv, options) => {
         if (isNaN(argv.b)) {
             throw `The base have to be a number`

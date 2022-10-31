@@ -1,8 +1,10 @@
 const argv = require('./config/yargs');
 
 const { createFile } = require('./helpers/multiplica');
-console.clear();
 
+require('colors');
+
+console.clear();
 /**
  * To create all tables once
  */
@@ -18,7 +20,5 @@ console.clear();
 /**
  * To use a terminal command
  */
-
-console.log(argv.b);
-createFile(argv.b, argv.l).then(fileName => console.log(`${fileName} created`))
+createFile(argv.b, argv.l, argv.d).then(fileName => console.log(`${fileName.rainbow} created`))
     .catch(err => { throw err })
