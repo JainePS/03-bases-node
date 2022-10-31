@@ -1,0 +1,21 @@
+{
+  "name": "03-bases-node",
+  "version": "1.0.0",
+  "description": "Is a simple multiplication table.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "base5": "node app --base=5",
+    "base3": "node app --base=3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JainePS/03-bases-node.git"
+  },
+  "author": "Jaine Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JainePS/03-bases-node/issues"
+  },
+  "homepage": "https://github.com/JainePS/03-bases-node#readme"
+}
